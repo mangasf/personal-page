@@ -11,7 +11,7 @@
         {{ if .icon }}
           <li><a href="{{ .url }}"><i class="{{ .icon }}"></i></a></li>
         {{ else }}
-          <li><a href="{{ .url }}">{{ .name }}</a></li>
+          <li>{{ .name }}</li>
         {{ end }}
       {{ end }}
     </ul>

@@ -5,7 +5,7 @@
     {{ end }}
     {{ if not .Site.Params.hideCredits }}
       {{ if not .Site.Params.hideCopyright }}{{ end }}
-      Powered by <a href="https://www.group4layers.com/">Group4Layers©</a>
+      {{ .Site.Params.PoweredBy }} <a href="https://www.group4layers.com/"><strong>Group4Layers<em>®</em></strong></a>
     {{ end }}
     {{ if .Site.Params.commit }}
       {{ if or (not .Site.Params.hideCredits) (not .Site.Params.hideCopyright) }} · {{ end }}

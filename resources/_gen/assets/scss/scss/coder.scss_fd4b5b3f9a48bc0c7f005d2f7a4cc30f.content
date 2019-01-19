@@ -22,7 +22,7 @@ body {
 
 a {
   font-weight: 300;
-  color: #1565c0;
+  color: #1bdbec;
   text-decoration: none; }
   a:focus, a:hover {
     text-decoration: underline; }
@@ -237,7 +237,7 @@ img {
       font-family: Lato, Helvetica, sans-serif;
       font-weight: 700; }
       .list ul li a:hover, .list ul li a:focus {
-        color: #1565c0; }
+        color: #1bdbec; }
 
 .centered {
   display: flex;
@@ -270,7 +270,7 @@ img {
           margin-right: 1.0rem;
           font-size: 1.6rem; }
           .centered .about ul li a:hover, .centered .about ul li a:focus {
-            color: #1565c0; }
+            color: #1bdbec; }
           @media only screen and (max-device-width: 768px) {
             .centered .about ul li a {
               font-size: 1.4rem; } }
@@ -302,9 +302,10 @@ img {
     font-family: Lato, Helvetica, sans-serif;
     font-weight: 700;
     line-height: 6.0rem;
+    text-decoration: none;
     color: #212121; }
   .navigation a:hover, .navigation a:focus {
-    color: #1565c0; }
+    color: #212121; }
   .navigation .navigation-title {
     letter-spacing: 0.1rem;
     text-transform: uppercase; }
@@ -367,7 +368,7 @@ img {
         color: #212121;
         cursor: pointer; }
         .navigation .menu-button:hover, .navigation .menu-button:focus {
-          color: #1565c0; } }
+          color: #1bdbec; } }
 
 .pagination {
   margin-top: 6.0rem;
@@ -390,6 +391,7 @@ img {
   line-height: 2.0rem;
   margin-bottom: 1.0rem; }
   .footer a {
-    color: #1565c0; }
+    color: #373a3c;
+    text-decoration: none; }
 
 /*# sourceMappingURL=coder.css.map */

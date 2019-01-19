@@ -7,12 +7,13 @@
     font-family: $heading-font-family;
     font-weight: 700;
     line-height: 6.0rem;
+    text-decoration: none;
     color: $fg-color;
   }
   a {
     &:hover,
     &:focus {
-      color: $link-color
+      color: $fg-color
     }
   }
   .navigation-title {
