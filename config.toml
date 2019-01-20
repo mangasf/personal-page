@@ -34,8 +34,8 @@ pygmentscodefencesguesssyntax = true
     keywords = "developer"
     avatarurl = "images/avatar.jpeg"
 
-    favicon_32 = "/img/favicon-32x32.png"
-    favicon_16 = "/img/favicon-16x16.png"
+    favicon_32 = "images/code-8x.png"
+    favicon_16 = "images/code-8x.png"
 
     hidecredits = false
     hidecopyright = false
