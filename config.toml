@@ -16,6 +16,11 @@ pygmentscodefencesguesssyntax = true
     [languages.en]
         languagename = "EN"
 
+        [[languages.en.menu.main]]
+            name = "Contact"
+            weight = 1
+            url = "#contact"
+
         [languages.en.params]
             author = "Fran Mangas"
             info = "Software Engineering"
@@ -23,6 +28,11 @@ pygmentscodefencesguesssyntax = true
 
     [languages.es]
             languagename = "ES"
+
+            [[languages.es.menu.main]]
+                name = "Contacto"
+                weight = 1
+                url = "#contacto"
 
             [languages.es.params]
                 author = "Fran Mangas"

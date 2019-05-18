@@ -178,6 +178,22 @@ img {
   padding-right: 2.0rem;
 }
 
+.container > div
+{
+  width: 80%;
+}
+
+.centered.header {
+  margin-bottom: 80px;
+}
+
+.header-description {
+  margin-bottom: 80px;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}
+
 .fab {
   font-weight: 400;
 }
@@ -200,4 +216,53 @@ img {
 
 .fas {
   font-weight: 900;
+}
+
+// MENU NAV
+
+nav.navigation section.container a{
+  font-family: 'Titillium Web', sans-serif;
+}
+
+// ABOUT
+
+.centered .about {
+  margin-top: -15%;
+}
+
+.about h1, .about h2 {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+// CONTACT SECTION
+
+.contact {
+
+  font-family: 'Titillium Web', sans-serif;
+
+  .form-control {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 100%;
+    background-color: #1bdbec;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
+// FOOTER
+
+.footer {
+  font-family: 'Titillium Web', sans-serif;
+
+  a {
+    margin-left: 5px;
+  }
 }
