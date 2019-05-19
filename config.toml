@@ -26,18 +26,36 @@ pygmentscodefencesguesssyntax = true
             info = "Software Engineering"
             poweredBy = "Powered by"
 
+            contactSectiondescription = "If you want to know about me or the projects I'm working on, you can write me, or maybe we can work together on some exciting project"
+            formName = "Name"
+            formEmail = "Email"
+            formPhone = "Phone"
+            formCompany = "Company"
+            formMessage = "Message"
+            formButton = "Send"
+
     [languages.es]
-            languagename = "ES"
+        languagename = "ES"
 
-            [[languages.es.menu.main]]
-                name = "Contacto"
-                weight = 1
-                url = "#contact"
+        [[languages.es.menu.main]]
+            name = "Contacto"
+            weight = 1
+            url = "#contact"
 
-            [languages.es.params]
-                author = "Fran Mangas"
-                info = "Ingeniero Software"
-                poweredBy = "Creado por"
+        [languages.es.params]
+            author = "Fran Mangas"
+            info = "Ingeniero Software"
+            poweredBy = "Creado por"
+
+            contactSectionDescription = "Si quieres saber más acerca de mi o sobre los proyectos en lo que estoy trabajando puedes escribirme, o quizás podamos trabajar juntos en algun proyecto emocionante"
+            formName = "Nombre"
+            formEmail = "Email"
+            formPhone = "Teléfono"
+            formCompany = "Empresa"
+            formMessage = "Mensaje"
+            formButton = "Enviar"
+
+
 
 [params]
     description = "Fran Mangas personal website"

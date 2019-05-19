@@ -166,15 +166,12 @@ img {
   margin-bottom: 80px; }
 
 .header-description {
-  margin-bottom: 80px;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin: 50px 20% 80px;
   text-align: center; }
   @media only screen and (max-device-width: 380px) {
     .header-description {
       margin-left: 8%;
-      margin-right: 8%;
-      margin-top: 50px; } }
+      margin-right: 8%; } }
 
 .fab {
   font-weight: 400; }

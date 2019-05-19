@@ -1,45 +1,49 @@
 <section class="container centered">
     <div class="contact" id="contact">
-        <h1 class="header">Contact</h1>
-        <p class="header-description">
-            If you want to know about me or the projects I'm working on, you can write me, or maybe we can work together on some exciting project 🚀
-        </p>
+        {{ with .Site.Menus.main}}
+        {{ range sort . }}
+        <h1 class="header">{{ .Name }}</h1>
+        {{ end}}
+        {{ end }}
+        <p class="header-description">{{ .Site.Params.ContactSectionDescription }} 🚀</p>
         <form>
             <input type="checkbox" name="_honeypot" style="display: none" tabindex="-1" autocomplete="off">
             <div class="row">
                 <div class="col-12 col-sm-6">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="name" placeholder="Name *">
+                        <input type="text" class="form-control" id="name" placeholder="{{ .Site.Params.FormName }} *">
                     </div>
                 </div>
                 <div class="col-12 col-sm-6">
                     <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="Email *">
+                        <input type="email" class="form-control" id="email" placeholder="{{ .Site.Params.FormEmail }} *">
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-sm-6">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="phone" placeholder="Phone">
+                        <input type="text" class="form-control" id="phone" placeholder="{{ .Site.Params.FormPhone }}">
                     </div>
                 </div>
                 <div class="col-12 col-sm-6">
                     <div class="form-group">
-                        <input type="company" class="form-control" id="company" placeholder="Company">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="form-group">
-                        <textarea class="form-control" id="message" rows="4" placeholder="Message"></textarea>
+                        <input type="company" class="form-control" id="company"
+                               placeholder="{{ .Site.Params.FormCompany }}">
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <button type="submit" class="btn btn-primary">Send</button>
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" rows="4"
+                                  placeholder="{{ .Site.Params.FormMessage }}"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="submit" class="btn btn-primary">{{ .Site.Params.FormButton }}</button>
                 </div>
             </div>
         </form>
