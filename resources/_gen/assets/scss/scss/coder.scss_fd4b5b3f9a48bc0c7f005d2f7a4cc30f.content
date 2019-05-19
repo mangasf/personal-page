@@ -377,10 +377,12 @@ nav.navigation section.container a {
           float: none !important;
           text-align: center; }
           .navigation .navigation-list .navigation-item a, .navigation .navigation-list .navigation-item span {
-            line-height: 5.0rem; } }
+            line-height: 5.0rem;
+            outline: 0; } }
       .navigation .navigation-list .navigation-item a, .navigation .navigation-list .navigation-item span {
         margin-left: 1.0rem;
-        margin-right: 1.0rem; }
+        margin-right: 1.0rem;
+        outline: 0; }
     @media only screen and (max-device-width: 768px) {
       .navigation .navigation-list .menu-separator {
         border-top: 2px solid #212121;

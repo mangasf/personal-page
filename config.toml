@@ -32,7 +32,7 @@ pygmentscodefencesguesssyntax = true
             [[languages.es.menu.main]]
                 name = "Contacto"
                 weight = 1
-                url = "#contacto"
+                url = "#contact"
 
             [languages.es.params]
                 author = "Fran Mangas"

@@ -49,11 +49,13 @@
         text-align: center;
         a, span {
           line-height: 5.0rem;
+          outline: 0;
         }
       }
       a, span {
         margin-left: 1.0rem;
         margin-right: 1.0rem;
+        outline: 0;
       }
     }
     .menu-separator {
