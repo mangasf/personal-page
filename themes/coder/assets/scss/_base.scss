@@ -226,10 +226,6 @@ nav.navigation section.container a{
 
 // ABOUT
 
-.centered .about {
-  margin-top: -15%;
-}
-
 .about h1, .about h2 {
   font-family: 'Titillium Web', sans-serif;
 }
@@ -239,6 +235,10 @@ nav.navigation section.container a{
 .contact {
 
   font-family: 'Titillium Web', sans-serif;
+
+  .header {
+    text-align: center;
+  }
 
   .form-control {
     font-size: 1.5rem;
@@ -261,6 +261,7 @@ nav.navigation section.container a{
 
 .footer {
   font-family: 'Titillium Web', sans-serif;
+  margin-top: 175px;
 
   a {
     margin-left: 5px;
