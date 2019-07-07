@@ -178,11 +178,6 @@ img {
   padding-right: 2.0rem;
 }
 
-.container > div
-{
-  width: 80%;
-}
-
 .centered.header {
   margin-bottom: 80px;
 }
@@ -236,7 +231,11 @@ nav.navigation section.container a{
 
 // CONTACT SECTION
 
-.contact {
+#contact {
+  width: 80%;
+}
+
+.contact, .projects {
 
   font-family: 'Titillium Web', sans-serif;
 

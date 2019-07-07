@@ -159,9 +159,6 @@ img {
   padding-left: 2.0rem;
   padding-right: 2.0rem; }
 
-.container > div {
-  width: 80%; }
-
 .centered.header {
   margin-bottom: 80px; }
 
@@ -197,19 +194,22 @@ nav.navigation section.container a {
 .about h1, .about h2 {
   font-family: 'Titillium Web', sans-serif; }
 
-.contact {
+#contact {
+  width: 80%; }
+
+.contact, .projects {
   font-family: 'Titillium Web', sans-serif; }
-  .contact .header {
+  .contact .header, .projects .header {
     text-align: center; }
-  .contact .form-control {
+  .contact .form-control, .projects .form-control {
     font-size: 1.5rem; }
-  .contact .btn {
+  .contact .btn, .projects .btn {
     width: 100%;
     background-color: #1bdbec;
     border: none;
     font-size: 1em;
     font-weight: bold; }
-  .contact textarea {
+  .contact textarea, .projects textarea {
     resize: none; }
 
 .footer {
@@ -427,6 +427,56 @@ nav.navigation section.container a {
       margin: 0;
       text-align: center;
       width: 3.2rem; }
+
+.container-projects.centered {
+  flex-direction: column;
+  height: 140vh; }
+
+.container-projects .header-description {
+  margin-bottom: 20px; }
+
+.row-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .row-projects .col {
+    flex: 33%;
+    max-width: 33%;
+    padding: 40px 40px;
+    text-align: center; }
+  .row-projects .col p {
+    display: flex;
+    justify-content: center;
+    justify-items: center; }
+  .row-projects .label {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.8em;
+    margin-right: 10px;
+    padding: 0 10px;
+    border-radius: 4px; }
+  .row-projects .label.label-dark {
+    color: #fff;
+    background: #1bdbec; }
+  .row-projects .label.label-light {
+    color: #888;
+    border: 2px solid #3b4251; }
+  .row-projects .label.label-normal {
+    color: #888;
+    border: 2px solid #1bdbec; }
+
+@media (max-width: 992px) {
+  .container-projects.centered {
+    height: 175vh; }
+  .row-projects .col {
+    flex: 50%;
+    max-width: 50%; } }
+
+@media (max-width: 540px) {
+  .container-projects.centered {
+    height: 475vh; }
+  .row-projects .col {
+    flex: 100%;
+    max-width: 100%; } }
 
 .footer {
   width: 100%;

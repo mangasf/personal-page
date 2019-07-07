@@ -17,8 +17,13 @@ pygmentscodefencesguesssyntax = true
         languagename = "EN"
 
         [[languages.en.menu.main]]
-            name = "Contact"
+            name = "Projects"
             weight = 1
+            url = "#projects"
+
+        [[languages.en.menu.main]]
+            name = "Contact"
+            weight = 2
             url = "#contact"
 
         [languages.en.params]
@@ -26,6 +31,7 @@ pygmentscodefencesguesssyntax = true
             info = "Software Engineering"
             poweredBy = "Powered by"
 
+            contactSectionName = "Contact"
             contactSectiondescription = "If you want to know about me or the projects I'm working on, you can write me, or maybe we can work together on some exciting project"
             formName = "Name"
             formEmail = "Email"
@@ -34,12 +40,20 @@ pygmentscodefencesguesssyntax = true
             formMessage = "Message"
             formButton = "Send"
 
+            projectsSectionName = "Projects"
+            projectsSectiondescription = "In the last years, I have been working on different projects, here you can see some of them"
+
     [languages.es]
         languagename = "ES"
 
         [[languages.es.menu.main]]
-            name = "Contacto"
+            name = "Proyectos"
             weight = 1
+            url = "#projects"
+
+        [[languages.es.menu.main]]
+            name = "Contacto"
+            weight = 2
             url = "#contact"
 
         [languages.es.params]
@@ -47,6 +61,7 @@ pygmentscodefencesguesssyntax = true
             info = "Ingeniero Software"
             poweredBy = "Creado por"
 
+            contactSectionName = "Contacto"
             contactSectionDescription = "Si quieres saber más acerca de mi o sobre los proyectos en lo que estoy trabajando puedes escribirme, o quizás podamos trabajar juntos en algun proyecto emocionante"
             formName = "Nombre"
             formEmail = "Email"
@@ -55,7 +70,8 @@ pygmentscodefencesguesssyntax = true
             formMessage = "Mensaje"
             formButton = "Enviar"
 
-
+            projectsSectionName = "Proyectos"
+            projectsSectiondescription = "En los últimos años he estado trabajando en diveros proyectos, aquí puedes ver algunos de ellos"
 
 [params]
     description = "Fran Mangas personal website"
@@ -64,6 +80,8 @@ pygmentscodefencesguesssyntax = true
 
     favicon_32 = "images/code-8x.png"
     favicon_16 = "images/code-8x.png"
+
+    projects_images_dir="images/projects/"
 
     hidecredits = false
     hidecopyright = false
