@@ -11,7 +11,7 @@ body {
   display: flex;
   color: #212121;
   background-color: #FAFAFA;
-  font-family: Merriweather, Georgia, serif;
+  font-family: Titillium Web, sans-serif;
   font-size: 1.6em;
   font-weight: 300;
   line-height: 1.8em; }
@@ -36,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Lato, Helvetica, sans-serif;
+  font-family: Titillium Web, sans-serif;
   font-weight: 700;
   color: #000;
   margin: 6.4rem 0 3.2rem 0; }
@@ -154,7 +154,7 @@ img {
 
 .container {
   margin: 0 auto;
-  max-width: 90.0rem;
+  max-width: 100.0rem;
   width: 100%;
   padding-left: 2.0rem;
   padding-right: 2.0rem; }
@@ -163,6 +163,7 @@ img {
   margin-bottom: 80px; }
 
 .header-description {
+  font-size: 1.1em;
   margin: 50px 20% 80px;
   text-align: center; }
   @media only screen and (max-device-width: 380px) {
@@ -246,6 +247,10 @@ nav.navigation section.container a {
   .top-link:hover {
     background-color: #E8E8E8; }
 
+@media (max-width: 540px) {
+  .top-link {
+    display: none; } }
+
 .content {
   flex: 1;
   margin-top: 1.6rem;
@@ -303,7 +308,7 @@ nav.navigation section.container a {
     .list ul li a {
       font-size: 1.8rem;
       color: #212121;
-      font-family: Lato, Helvetica, sans-serif;
+      font-family: Titillium Web, sans-serif;
       font-weight: 700; }
       .list ul li a:hover, .list ul li a:focus {
         color: #1bdbec; }
@@ -368,7 +373,7 @@ nav.navigation section.container a {
   .navigation a, .navigation span {
     display: inline;
     font-size: 1.6rem;
-    font-family: Lato, Helvetica, sans-serif;
+    font-family: Titillium Web, sans-serif;
     font-weight: 700;
     line-height: 6.0rem;
     text-decoration: none;
@@ -478,7 +483,7 @@ nav.navigation section.container a {
     justify-items: center; }
   .row-projects .label {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 0.8em;
+    font-size: 1em;
     margin-right: 10px;
     padding: 0 10px;
     border-radius: 4px; }
@@ -505,6 +510,73 @@ nav.navigation section.container a {
   .row-projects .col {
     flex: 100%;
     max-width: 100%; } }
+
+.container-training {
+  background: linear-gradient(225deg, #3f3f3f, #2e2e2e);
+  color: #e0e0e0;
+  display: inline-block;
+  flex-direction: column;
+  height: 100vh; }
+  .container-training .header-description {
+    font-weight: bold; }
+  .container-training .row {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .container-training .header {
+    margin-top: 80px;
+    text-align: center;
+    color: inherit; }
+  .container-training .row-training-collaborators {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .container-training .row-training-collaborators .col {
+      flex: 35%;
+      max-width: 35%;
+      padding: 40px 40px;
+      text-align: center;
+      background-color: white;
+      border-radius: 10px;
+      margin: 0 25px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+      .container-training .row-training-collaborators .col img {
+        padding: 40px 0;
+        max-height: 180px; }
+      .container-training .row-training-collaborators .col .collaborator-title {
+        background-color: #f2f2f2;
+        color: #404040;
+        padding: 8px 0;
+        margin-top: 0; }
+      .container-training .row-training-collaborators .col .collaborator-description {
+        text-align: left;
+        color: #606060;
+        list-style: none;
+        padding: 0 25px;
+        height: 175px;
+        font-size: 1.1em; }
+        .container-training .row-training-collaborators .col .collaborator-description li {
+          margin-bottom: 5px; }
+
+@media (max-width: 992px) {
+  .container-training.centered {
+    height: 160vh; }
+    .container-training.centered .row-training-collaborators .col {
+      flex: 50%;
+      max-width: 50%;
+      margin-bottom: 50px; } }
+
+@media (max-width: 540px) {
+  .container-training.centered {
+    height: 220vh;
+    margin-bottom: 50px; }
+    .container-training.centered .row-training-collaborators .col {
+      flex: 100%;
+      max-width: 100%;
+      margin-bottom: 50px; }
+      .container-training.centered .row-training-collaborators .col .collaborator-description {
+        padding: 0 0; } }
 
 .footer {
   width: 100%;

@@ -1,0 +1,27 @@
+<section class="container-fluid container-training centered">
+  <div class="row">
+    <div class="training" id="training">
+      <h1 class="header">{{ .Site.Params.TrainingSectionName }}</h1>
+      <p class="header-description">{{ .Site.Params.TrainingSectionDescription }}</p>
+    </div>
+  </div>
+  <div class="row row-training-collaborators">
+    <div class="col">
+      <img src="{{ .Site.Params.training_images_dir }}/group4layers_small_logo.png" />
+      <h6 class="collaborator-title">{{ .Site.Params.collaboratorOneName }}</h6>
+      <ul class="collaborator-description">
+        <li>🏢 {{ .Site.Params.collaboratorOneDescription1 }}</li>
+        <li>👨‍💼 {{ .Site.Params.collaboratorOneDescription2 }}</li>
+        <li>📗 {{ .Site.Params.collaboratorOneDescription3 }}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <img class="image-university" src="{{ .Site.Params.training_images_dir }}/la_salle_logo.jpg" />
+      <h6 class="collaborator-title">{{ .Site.Params.collaboratorTwoName }}</h6>
+      <ul class="collaborator-description">
+        <li>👩‍💻 {{ .Site.Params.collaboratorTwoDescription1 }}</li>
+        <li>🏗️ {{ .Site.Params.collaboratorTwoDescription2 }}</li>
+      </ul>
+    </div>
+  </div>
+</section>

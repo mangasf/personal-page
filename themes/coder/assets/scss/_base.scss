@@ -172,7 +172,7 @@ img {
 
 .container {
   margin: 0 auto;
-  max-width: 90.0rem;
+  max-width: 100.0rem;
   width: 100%;
   padding-left: 2.0rem;
   padding-right: 2.0rem;
@@ -183,7 +183,7 @@ img {
 }
 
 .header-description {
-
+  font-size: 1.1em;
   margin: 50px 20% 80px;
   text-align: center;
 
@@ -309,5 +309,12 @@ nav.navigation section.container a{
 
   &:hover {
     background-color: #E8E8E8;
+  }
+}
+
+@media (max-width: 540px) {
+
+  .top-link {
+    display: none;
   }
 }
